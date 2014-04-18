@@ -1,4 +1,6 @@
  $(document).ready(function(){
+  var snd = new Audio("http://soundjax.com/reddo/78134%5Emusic14.mp3");
+  snd.play();
    $('#background').fadeIn('slow');
   $('#M').delay(1000).fadeIn('slow');
    $('#A').delay(1800).fadeIn('slow');
