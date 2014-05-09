@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<!-- GAME IS INCOMPLETE! ABANDONED THE D.R.Y METHOD WITHOUT REALIZING. -->
 <html>
 <head>
-	<link rel='stylesheet' href='style.css'/>
-		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script src='script.js'></script>
-
+<link rel='stylesheet' href='style.css'/>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src='script.js'></script>
+  <title> Math-Tism </title>
 </head>
 <body>
+ 
       <!-- Javascript -->
           <script>
            function Start() {
      $('#start').fadeOut('slow');
     $('#Help').fadeOut('slow');
-       $('#choose').delay(1000).fadeIn('slow'); $('#add').delay(1000).fadeIn('slow'); 
+       $('#choose').delay(1000).fadeIn('slow'); $('#add').delay(1000).fadeIn('slow');
  $('#multi').delay(1000).fadeIn('slow');
              $('#sub').delay(1000).fadeIn('slow');
    $('#divide').delay(1000).fadeIn('slow');
@@ -37,12 +37,17 @@
               $('#n8').fadeIn('slow');
               $('#n9').fadeIn('slow');
               
- }  
+ }
            function choice2() {
+//If these image/buttons are displayed
+             $("#gameover").fadeOut('slow');
+                 $("#refresh").fadeOut('slow');
+              $("#playagain").fadeOut('slow');
+
       $('#add').fadeOut('slow');
    $('#sub').fadeOut('slow');
    
-$('#multi').fadeOut('slow');             $('#divide').fadeOut('slow');
+$('#multi').fadeOut('slow'); $('#divide').fadeOut('slow');
   $('#choose').fadeOut('slow');
    
            
@@ -56,689 +61,43 @@ $('#multi').fadeOut('slow');             $('#divide').fadeOut('slow');
               $('#n8').delay(1700).fadeIn('slow');
               $('#n9').delay(1800).fadeIn('slow');
 
-             var point1 = 1;
-var totalpoints = 0;
-               var numbers = Math.floor(Math.random()*3+1);
-  switch(numbers){
-    case 1:
-    
-    
-      break;
-    case 2: 
-  questiontwo();
- 
-      break;
-    case 3: 
-      questionthree();
-  
-      break;
-    case 4:
-      questionfour();
-      
-      break;
-    case 5:
-      questionfive();
-      break;
-    case 6:
-      questionsix();
-      break;
-    case 7:
-      questionseven();
-      break;
-    case 8:
-      questioneight();
-      break;
-    case 9:
-      questionnine();
-      break;
-    case 10:
-      questionten();
-      break;
-    case 11:
-      questionelev();
-      break;
-    case 12:
-      questiontwelve();
-      break;
-    case 13:
-      questionthirteen();
-      break;
-    case 14:
-      questionfourteen();
-      break;
-    default: alert("Hm?");
-  }
-           
-  function questionone() {
- 
-     alert("6 times __ equals 48?"); $('#n8').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
-       return multiply();
-     });
-      $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-     GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-  $('#n4').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-     GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-  $('#n7').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-   $('#n9').click(function() {
-     alert("Incorrect!");  
-GameOver();
-   });                                                                               
-                                    }
-     function questiontwo() {
-
-       alert("3 times __ equals 12?"); 
- $('#n4').click(function(){
-    alert("That's correct!");
-   totalpoints += point1;
-   alert(totalpoints);
-   return multiply();
- });
-  $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-    
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-     GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-  $('#n8').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-     GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-  $('#n7').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-     GameOver();
-   
- });   
-       
- 
- }
-  function questionthree() {  
-    alert("5 times ___ equals 25?"); 
-    $('#n5').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
-      return multiply();
-    });
-   $('#n1').click(function() {
-   alert("Incorrect!");
-     GameOver();
-
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-    
-    
-    }
-function questionfour() { 
-
-      alert("8 times __ equals 32?"); 
- $('#n4').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- return multiply();
- });
-   $('#n1').click(function() {
-   alert("Incorrect!");
-return GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-return GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-     
-    
-      
-    }  function questionfive() {
-        alert("2 times __ equals 2?");
- $('#n1').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
-   return multiply();
- });
-   $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-   });
-
-    }  function questionsix() { 
-        alert("3 times __ equals 18?"); 
- $('#n6').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- 
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-      return;
- });
-      
-    } function questionseven() {
-        alert("2 times __ equals 14?"); 
- $('#n7').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- 
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
- });
-      return;
-      
-    }  function questioneight() {
-        alert("6 times __ equals 36?"); 
- $('#n6').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- 
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-     GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
- });
-      return;
-      
-    }  function questionnine() {
-        alert("7 times __ equals 63?");
- $('#n9').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- 
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
- });
-      return;
-      
-    } function questionten(){ 
-        alert("7 times __ equals 21?"); 
- $('#n3').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- 
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
- });
-      return;
-      
-    } function questionelev() {
-        alert("3 times __ equals 9?");
- $('#n3').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- 
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
- });
-      return;
-      
-    } function questiontweleve() {
-        alert("3 times __ equals 15?");
- $('#n5').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
-   
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n9').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
- });
-      return;
-      
-    }  function questionthirteen(){ 
-       alert("6 times __ equals 54?");
- $('#n9').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
-
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n8').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
- });
-        return false;
-      }
-     function questionfourteen(){
-        alert("9 times __ equals 81?");
- $('#n9').click(function() {
-   alert("Correct!");
-   totalpoints += point1;
-   alert(totalpoints);
- 
-   $('#n1').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n2').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n3').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n4').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n5').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   
-  $('#n6').click(function() {
-   alert("Incorrect!");
-  GameOver();
-
-  }); 
-   $('#n7').click(function() {
-   alert("Incorrect!");
-GameOver();
-  }); 
-   $('#n8').click(function() {
-   alert("Incorrect!");
-    GameOver();
-  });
- });
-         return false;
-    }
+               var numbers = Math.floor(Math.random()*2+1);
+             switch(numbers){
+               case 1:
+                 alert("2 times __ equals 6?");
+             $("img").one("click",function(){
+                 if(this.id === "n3") {
+               alert("Correct!");
+                   $("img").off();
+                   multiplcation();
+             }  else {
+               alert("Incorrect!");
+               $("img").off();
+               GameOver();
+             }
+             });
+                 break;
+               case 2:
+                 alert("4 times __ equals 36?");
+                 $("img").one("click",function(){
+                   if (this.id === "n9") {
+                     alert("Correct!");
+                     $("img").off(); 
+                     multiplcation();
+                   } else {
+                     $("img").off();
+                     GameOver();
+                     
+                   }
+                 });
+                 break;
+             }
                         
             
             }
             function GameOver() {
               
-              alert("Game Over, my friend!");
-              alert("Thank you for playing!");
+   
               $('#n1').fadeOut('slow');
               $('#n2').fadeOut('slow');
               $('#n3').fadeOut('slow');
@@ -748,8 +107,9 @@ GameOver();
               $('#n7').fadeOut('slow');
               $('#n8').fadeOut('slow');
               $('#n9').fadeOut('slow');
-location.reload();
-                                            
+              $("#gameover").delay(1000).fadeIn('slow');
+                 $("#refresh").delay(1000).fadeIn('slow');
+              $("#playagain").delay(1000).fadeIn('slow');
 
             }
             function Help() {
@@ -804,6 +164,12 @@ location.reload();
           <img id="n8" src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-alphanumeric/068109-3d-transparent-glass-icon-alphanumeric-number-8.png"/>
           <img id="n9" src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-alphanumeric/068110-3d-transparent-glass-icon-alphanumeric-number-9.png"/>
       <!-- END -->
-          
+          <!-- Game over display -->
+  <img id="gameover" src="http://files.gamebanana.com/img/ico/sprays/52a41af6f36fa.png"/>
+  <!-- END -->
+  <!-- Button to refresh page -->
+  <button id="refresh" onclick="Refresh()"> Main Menu</button>
+  <button id="playagain" onclick="choice2()">Play again </button>
+  <!-- END -->
 </body>
 </html>
