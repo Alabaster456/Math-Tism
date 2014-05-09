@@ -15,7 +15,7 @@ In this crazy, ground-breaking Math game, you have to choose your favorite arith
 ------
 This game remains unfinished for three reasons;
 
-1. I didn't create a algorithim that generated **random equations** for the user to answer to with the number panel.
+1. I didn't create a algorithim that generated **random equations** for the user to answer to with the number panel (ALMOST FINISHED).
 2. I didn't activate the other arithmetics (*only multiplication*).
 3. I didn't implement sound. 
 
