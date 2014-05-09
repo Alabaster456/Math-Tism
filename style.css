@@ -41,28 +41,28 @@ height: 90px;
   width: 80px;
 margin-left: 350px;
 }
-#line  {
+#line {
 display: none;
 position: absolute;
 height: 90px;
   width: 80px;
 margin-left: 420px;
 }
-#T2  {
+#T2 {
 display: none;
 position: absolute;
 height: 90px;
   width: 80px;
 margin-left: 490px;
 }
-#I   {
+#I {
 display: none;
 position: absolute;
 height: 90px;
   width: 80px;
 margin-left: 530px;
 }
-#S   {
+#S {
 display: none;
 position: absolute;
 height: 100px;
@@ -224,26 +224,47 @@ border: 10px solid blue;
   background-color: red;
 }
   #n2:hover {
-  background-color: red;
+  background-color: green;
 }
   #n3:hover {
-  background-color: red;
+  background-color: cyan;
 }
  #n4:hover {
-  background-color: red;
+  background-color: orange;
 }
   #n5:hover {
-  background-color: red;
+  background-color: yellow;
 }
   #n6:hover {
-  background-color: red;
+  background-color: black;
 }
  #n7:hover {
-  background-color: red;
+  background-color: purple;
 }
   #n8:hover {
-  background-color: red;
+  background-color: darkgreen;
 }
   #n9:hover {
-  background-color: red;
+  background-color: darkblue;
+  }
+/* GAME OVER BUTTON */
+#gameover {
+  margin-left:350px;
+  margin-top:170px;
+  position:fixed;
+ display:none;
+}
+/* END */
+/*Buttons that appear when the game over message appears */
+#refresh {
+position:fixed;
+  margin-left:380px;
+  margin-top:430px;
+  display:none;
+}
+#playagain {
+  position:fixed;
+  margin-left:500px;
+  margin-top:430px;
+  display:none;
 }
