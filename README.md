@@ -15,12 +15,12 @@ In this crazy, ground-breaking Math game, you have to choose your favorite arith
 ------
 This game remains unfinished for three reasons;
 
-1. I didn't create a algorithim that generated **random equations** for the user to answer to with the number panel (ALMOST FINISHED).
+1. I didn't create a function that generated **random equations** for the user to answer to with the number panel (ALMOST FINISHED).
 2. I didn't activate the other arithmetics (*only multiplication*).
 3. I didn't implement sound. 
 
 
-With this in mind, I need to do these things. But I'm willing to allow any **programmer to participate in this project**, because it would be nice to gather help from others even if it's the tiniest. So, you want to help? Just contact me at yazidnoned@hotmail.com.
+With this in mind, I need to do these things. But I'm willing to let any **programmer participate in this project** as an experience or learning improvement. So, you want to help? Just contact me at yazidnoned@hotmail.com.
 
 If I don't manage to get back to you in time, please take consideration that I'm probably busy in the meantime. But I will get back to you, no matter what. :)
 
