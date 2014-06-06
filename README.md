@@ -17,7 +17,7 @@ This game remains unfinished for three reasons;
 
 1. I didn't create a function that generated **random equations** for the user to answer with using the number panel (ALMOST FINISHED).
 2. I didn't activate the other arithmetics (*only multiplication*).
-3. I didn't implement sound. 
+3. I didn't implement sound. (COMPLETED) 
 
 
 With this in mind, I need to do these things. But I'm willing to let any **programmer participate in this project** as an experience or learning improvement. So, you want to help? Just contact me at yazidnoned@hotmail.com.
