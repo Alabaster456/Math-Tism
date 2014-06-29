@@ -11,21 +11,22 @@
       <!-- Javascript -->
           <script>
            function Start() {
-     $('#start').fadeOut('slow');
-    $('#Help').fadeOut('slow');
-       $('#choose').delay(1000).fadeIn('slow'); $('#add').delay(1000).fadeIn('slow');
- $('#multi').delay(1000).fadeIn('slow');
+             $('#start').fadeOut('slow');
+             $('#Help').fadeOut('slow');
+             $('#choose').delay(1000).fadeIn('slow'); 
+             $('#add').delay(1000).fadeIn('slow');
+             $('#multi').delay(1000).fadeIn('slow');
              $('#sub').delay(1000).fadeIn('slow');
-   $('#divide').delay(1000).fadeIn('slow');
+             $('#divide').delay(1000).fadeIn('slow');
            }
+           
             function choice1 () {
    $('#multi').fadeOut('slow');
    $('#sub').fadeOut('slow');
    $('#divide').fadeOut('slow');
-              $('#choose').fadeOut('slow');
-    alert("Addition, huh?");
+  $('#choose').fadeOut('slow');
     $('#add').fadeOut('slow');
-              alert("Okay! Let the game begin!");
+
               
             $('#n1').fadeIn('slow');
               $('#n2').fadeIn('slow');
@@ -39,15 +40,15 @@
               
  }
            function choice2() {
-//If these image/buttons are displayed
+//TO-DO: If these image/buttons are displayed..
              $("#gameover").fadeOut('slow');
                  $("#refresh").fadeOut('slow');
               $("#playagain").fadeOut('slow');
 
       $('#add').fadeOut('slow');
    $('#sub').fadeOut('slow');
-   
-$('#multi').fadeOut('slow'); $('#divide').fadeOut('slow');
+   $('#multi').fadeOut('slow');
+   $('#divide').fadeOut('slow');
   $('#choose').fadeOut('slow');
    
            
@@ -95,9 +96,8 @@ $('#multi').fadeOut('slow'); $('#divide').fadeOut('slow');
                         
             
             }
+            
             function GameOver() {
-              
-   
               $('#n1').fadeOut('slow');
               $('#n2').fadeOut('slow');
               $('#n3').fadeOut('slow');
@@ -112,6 +112,7 @@ $('#multi').fadeOut('slow'); $('#divide').fadeOut('slow');
               $("#playagain").delay(1000).fadeIn('slow');
 
             }
+            
             function Help() {
               alert("Welcome to Math-tism!");
               alert("In this game, you can select your choice of arithmetic; addition, multiplication, substraction or division!");
@@ -152,7 +153,9 @@ $('#multi').fadeOut('slow'); $('#divide').fadeOut('slow');
           <button id="sub" onclick="choice3()"> Subtraction </button>
           <button id="divide" onclick="choice4()"> Division </button>
           <!--- END -->
+  
           <div id="choose"> Choose your arithmetic! </div>
+  
                   <!-- Numbers that are in boxes -->
       <img id="n1"src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-alphanumeric/068102-3d-transparent-glass-icon-alphanumeric-number-1.png"/>
          <img id="n2" src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-alphanumeric/068103-3d-transparent-glass-icon-alphanumeric-number-2.png"/>
@@ -164,9 +167,11 @@ $('#multi').fadeOut('slow'); $('#divide').fadeOut('slow');
           <img id="n8" src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-alphanumeric/068109-3d-transparent-glass-icon-alphanumeric-number-8.png"/>
           <img id="n9" src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-alphanumeric/068110-3d-transparent-glass-icon-alphanumeric-number-9.png"/>
       <!-- END -->
+  
           <!-- Game over display -->
   <img id="gameover" src="http://files.gamebanana.com/img/ico/sprays/52a41af6f36fa.png"/>
   <!-- END -->
+  
   <!-- Button to refresh page -->
   <button id="refresh" onclick="Refresh()"> Main Menu</button>
   <button id="playagain" onclick="choice2()">Play again </button>
