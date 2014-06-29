@@ -3,6 +3,8 @@
    //http://soundjax.com/reddo/77642%5Echinamusic.mp3
    snd.loop = true;
    snd.play();
+   
+   //Loads the background image, buttons and letters. 
    $('#background').fadeIn('slow');
   $('#M').delay(1000).fadeIn('slow');
    $('#A').delay(1800).fadeIn('slow');
@@ -19,9 +21,13 @@ $('#Help').delay(5000).fadeIn('slow'); $('#firework1').delay(5000).fadeIn('slow'
  
  });
 
+//Reloads the page.
 function Refresh() {
 location.reload();
 }
+
+
+//Plays the multiplcation() function if selected.
 function multiplcation () {
   var numbers = Math.floor(Math.random()*10+1); 
   switch(numbers) {
