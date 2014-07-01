@@ -43,7 +43,9 @@ function multiplcation () {
         }
       });
       break;
-    case 2: alert("9 times __ equals 54?");
+      
+    case 2:
+     alert("9 times __ equals 54?");
       $("img").one("click",function(){
         if (this.id === "n6") {
           $("img").off();
@@ -54,6 +56,7 @@ function multiplcation () {
         }
       });
       break;
+      
     case 3:
       alert("8 times __ equals 64?");
       $("img").one("click",function(){
@@ -64,6 +67,10 @@ function multiplcation () {
           GameOver();
         }
       });
-     
+     break;
+  
+  default:
+    alert("No number was selected by the program.");
   }
+  
 }
